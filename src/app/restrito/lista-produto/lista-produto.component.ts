@@ -37,10 +37,10 @@ export class ListaProdutoComponent implements OnInit {
         this.listarProdutos();
       },
       (err) => {
-        console.log('erro ao Excluir');
+        console.log("Erro ao Excluir!");
       }
     );
 
-    this._router.navigate(['/restrito/lista']);
+    this._router.navigate(["/restrito/lista"]);
   }
 }

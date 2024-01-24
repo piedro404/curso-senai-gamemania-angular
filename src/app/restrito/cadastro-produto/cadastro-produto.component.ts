@@ -21,7 +21,7 @@ export class CadastroProdutoComponent {
         alert("Cadastro Efetuado com Sucesso");
       },
       err => {
-        alert("Erro ao Cadastrar");
+        alert("Erro ao Cadastrar!");
       }
     );
 
