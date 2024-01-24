@@ -3,12 +3,12 @@
         <h2>Login</h2>
         <form class="row g-3">
             <label for="staticUser" class="visually-hidden">Usuário</label>
-            <input type="text" class="form-control" id="staticUser" placeholder="email@example.com">
+            <input name="usuario" required type="text" [(ngModel)]="usuario" class="form-control" id="staticUser" placeholder="email@example.com">
 
             <label for="inputPassword" class="visually-hidden">Senha</label>
-            <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
+            <input name="password" type="password" [(ngModel)]="senha" class="form-control" id="inputPassword" placeholder="senha">
 
-            <button type="submit" class="btn btn-primary mb-3">Entrar</button>
+            <button type="submit" class="btn btn-primary mb-3" (click)="fazerLogin()">Entrar</button>
         </form>
     </section>
 </main>

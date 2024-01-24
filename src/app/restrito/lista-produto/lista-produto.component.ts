@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Produto } from '../../models/Produto.model';
 import { ProdutoService } from '../../produto.service';
+import { LoginService } from '../../login.service';
 
 @Component({
   selector: 'app-lista-produto',
@@ -11,10 +12,11 @@ import { ProdutoService } from '../../produto.service';
 export class ListaProdutoComponent implements OnInit {
   public produtos: Produto[] = [];
 
-  constructor(private _produtoService: ProdutoService, private _router:Router) {}
+  constructor(private _produtoService: ProdutoService, private _router: Router, private _loginService: LoginService){ }
 
   ngOnInit(): void {
     this.listarProdutos();
+    this._loginService.setMostraMenu(false);
   }
 
   listarProdutos(): void {
