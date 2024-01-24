@@ -1,0 +1,32 @@
+{
+  "produtos": [
+    {
+      "produto": "Jogo 1",
+      "descricao": "Descrição do jogo 1",
+      "foto": "jogo1.png",
+      "preco": 300,
+      "id": "1"
+    },
+    {
+      "produto": "Jogo 2",
+      "descricao": "Descrição do jogo 2",
+      "foto": "jogo2.png",
+      "preco": 200,
+      "id": "2"
+    },
+    {
+      "produto": "Jogo 3",
+      "descricao": "Descrição do jogo 3",
+      "foto": "jogo3.png",
+      "preco": 400,
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "produto": "Palworld",
+      "descricao": "Novo jogo de Mundo Aberto",
+      "foto": "palworld.png",
+      "preco": 80
+    }
+  ]
+}
