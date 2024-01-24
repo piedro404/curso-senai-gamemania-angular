@@ -11,7 +11,7 @@ import { ProdutoService } from '../../produto.service';
 export class ListaProdutoComponent implements OnInit {
   public produtos: Produto[] = [];
 
-  constructor(private _produtoService: ProdutoService, private router:Router) {}
+  constructor(private _produtoService: ProdutoService, private _router:Router) {}
 
   ngOnInit(): void {
     this.listarProdutos();
@@ -41,6 +41,6 @@ export class ListaProdutoComponent implements OnInit {
       }
     );
 
-    this.router.navigate(['/restrito/lista']);
+    this._router.navigate(['/restrito/lista']);
   }
 }
